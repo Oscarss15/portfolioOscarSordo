@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import HamburgerMenu from "./components/menu.vue";
+import HamburgerMenu from "./components/Menu.vue";
 import Loading from "./components/Loading.vue";
 import Config from "./components/Config.vue";
 import CustomCursor from "./components/CustomCursor.vue";
