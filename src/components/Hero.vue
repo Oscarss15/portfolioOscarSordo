@@ -36,7 +36,7 @@ const texts = [
   "Diseño Web | Html · Css · Wordpress · Figma",
   "Front-End | JavaScript · Vue",
   "Full-Stack | Java · Spring · MySQL · Git",
-  "SEO y Posicionamiento | Google Analytics · SEO on-page · SEO off-page",
+  "SEO y Posicionamiento | Google Analytics · SEO on-page",
 ];
 
 const dynamicText = ref("");
@@ -268,6 +268,24 @@ onMounted(() => {
   .hero-3d-space {
     width: 90%;
     height: 180px;
+  }
+
+  .hero-texts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-subtitle {
+    order: 1;
+  }
+
+  .hero-name {
+    order: 2;
+  }
+
+  .hero-specialty {
+    order: 3;
+    min-height: 3em; /* 👈 clave */
   }
 }
 </style>

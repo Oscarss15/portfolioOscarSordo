@@ -316,6 +316,10 @@ onMounted(() => {
   
 
  }
+.tech-name{
+  font-size: clamp(0.5rem, 0.8vw, 1.5rem);
+}
+
 }
 
 

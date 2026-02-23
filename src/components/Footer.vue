@@ -7,7 +7,7 @@
 
     <div class="socials">
       <a
-        href="https://www.linkedin.com/in/tu-usuario"
+        href="https://www.linkedin.com/in/oscar-sordo-somohano/"
         target="_blank"
         rel="noopener"
         aria-label="LinkedIn"
@@ -16,7 +16,7 @@
       </a>
 
       <a
-        href="https://github.com/tu-usuario"
+        href="https://github.com/Oscarss15"
         target="_blank"
         rel="noopener"
         aria-label="GitHub"
@@ -24,12 +24,12 @@
         <i class="fab fa-github"></i>
       </a>
 
-      <a href="mailto:tuemail@email.com" aria-label="Email">
+      <a href="mailto:oscar15-91@hotmail.com" aria-label="Email">
         <i class="fas fa-envelope"></i>
       </a>
 
       <a
-        href="https://wa.me/34600000000"
+        href="https://wa.me/34666272696"
         target="_blank"
         rel="noopener"
         aria-label="WhatsApp"
