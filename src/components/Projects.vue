@@ -188,11 +188,15 @@ onMounted(() => {
 }
 
 .cards-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 85%;
   margin: 3vh auto 0 auto;
   display: grid;
   gap: 25px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 360px));
+
 }
 
 .fade-in {
@@ -205,7 +209,12 @@ onMounted(() => {
   opacity: 1;
   transform: translateY(0);
 }
-
+@media (min-width: 1500px) {
+  .cards-grid{
+grid-template-columns: repeat(auto-fit, minmax(240px, 460px));
+  }
+   
+}
 @media (max-width: 1024px) {
   .cards-grid {
     grid-template-columns: repeat(2, 1fr);

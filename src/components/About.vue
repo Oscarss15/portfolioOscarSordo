@@ -2,13 +2,8 @@
   <section class="about-section">
     <div class="about-header">
       <h2 class="about-title" ref="titleRef">
-        <span
-          v-for="(char, index) in titleLetters"
-          :key="index"
-          class="letter"
-          :style="{ '--delay': index * 0.05 + 's' }"
-          :class="{ visible: titleVisible }"
-        >
+        <span v-for="(char, index) in titleLetters" :key="index" class="letter"
+          :style="{ '--delay': index * 0.05 + 's' }" :class="{ visible: titleVisible }">
           {{ char }}
         </span>
       </h2>
@@ -20,20 +15,11 @@
 
     <div class="about-content">
       <div class="about-left fade-in-left" ref="aboutLeftRef">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 408.000000 612.000000"
-          preserveAspectRatio="xMidYMid meet"
-          class="about-svg"
-        >
-          <g
-            transform="translate(0.000000,612.000000) scale(0.100000,-0.100000)"
-            fill="currentColor"
-            stroke="var(--color-tertiary)"
-            stroke-width="50"
-          >
-            <path
-              d="M1815 5134 c-24 -26 -49 -61 -56 -77 -9 -22 -17 -28 -33 -24 -112 26
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408.000000 612.000000" preserveAspectRatio="xMidYMid meet"
+          class="about-svg">
+          <g transform="translate(0.000000,612.000000) scale(0.100000,-0.100000)" fill="currentColor"
+            stroke="var(--color-tertiary)" stroke-width="50">
+            <path d="M1815 5134 c-24 -26 -49 -61 -56 -77 -9 -22 -17 -28 -33 -24 -112 26
       -132 28 -161 17 l-30 -12 32 -26 c17 -15 55 -36 83 -47 65 -25 73 -34 59 -73
       -7 -22 -7 -36 0 -51 16 -30 13 -60 -9 -88 -24 -31 -25 -49 -4 -57 9 -3 14 -12
       11 -20 -9 -22 13 -159 28 -183 8 -12 30 -27 50 -34 29 -11 34 -17 29 -34 -4
@@ -62,38 +48,23 @@
       -132 88 -83 35 -98 50 -110 105 -6 29 -7 30 -65 30 l-59 0 -7 35 c-10 44 6
       115 31 148 11 13 20 35 20 47 0 14 7 25 20 28 15 4 19 13 18 39 -1 19 2 40 6
       46 8 14 -30 159 -51 192 -9 14 -40 48 -68 75 -37 37 -59 50 -80 51 -17 0 -70
-      4 -118 8 l-88 8 -44 -48z"
-            />
+      4 -118 8 l-88 8 -44 -48z" />
           </g>
         </svg>
       </div>
 
       <div class="about-right" ref="aboutRightRef">
         <div class="about-text">
-          <p
-            v-for="(paragraph, pIndex) in aboutTextParagraphs"
-            :key="pIndex"
-            class="typewriter"
-          >
-            <span
-              v-for="(word, wIndex) in paragraph.split(' ')"
-              :key="wIndex"
-              class="word"
-            >
-              <span
-                v-for="(char, cIndex) in word.split('')"
-                :key="cIndex"
-                class="letter"
-                :style="{
-                  '--delay':
-                    (charIndexOffset[pIndex] +
-                      wCharOffsets[pIndex][wIndex] +
-                      cIndex) *
-                      0.03 +
-                    's',
-                }"
-                :class="{ visible: textVisible }"
-              >
+          <p v-for="(paragraph, pIndex) in aboutTextParagraphs" :key="pIndex" class="typewriter">
+            <span v-for="(word, wIndex) in paragraph.split(' ')" :key="wIndex" class="word">
+              <span v-for="(char, cIndex) in word.split('')" :key="cIndex" class="letter" :style="{
+                '--delay':
+                  (charIndexOffset[pIndex] +
+                    wCharOffsets[pIndex][wIndex] +
+                    cIndex) *
+                  0.03 +
+                  's',
+              }" :class="{ visible: textVisible }">
                 {{ char }}
               </span>
 
@@ -103,15 +74,12 @@
         </div>
 
         <div class="about-buttons">
-          <a href="/public/docs/CvOscarSordo.pdf" download class="about-btn">
+          <a href="/public/docs/CvOscarSordo.pdf" target="_blank" rel="noopener noreferrer" class="about-btn">
             <i class="fa-solid fa-file-pdf"></i>
             Descargar CV
           </a>
-          <a
-            href="/docs/Carta_recomendacion_OscarSordo.pdf"
-            download
-            class="about-btn outline"
-          >
+          <a href="/docs/Carta_recomendacion_OscarSordo.pdf" target="_blank" rel="noopener noreferrer"
+            class="about-btn outline">
             <i class="fa-solid fa-file-signature"></i>
             Carta de recomendación
           </a>
@@ -345,31 +313,37 @@ onMounted(() => {
   background-color: var(--color-secondary);
   color: var(--color-tertiary);
 }
+
 @media (max-width: 1024px) {
-  .about-section{
+  .about-section {
     height: auto;
   }
 
 }
+
 @media (max-width: 768px) {
-  .about-section{
+  .about-section {
     height: auto;
   }
+
   .about-content {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
-  .about-text{
+
+  .about-text {
     margin-left: 20px;
 
   }
-  .about-buttons{
+
+  .about-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
   }
+
   .about-left img {
     width: 80%;
     max-width: none;
