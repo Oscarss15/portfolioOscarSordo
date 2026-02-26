@@ -1,17 +1,35 @@
 :root {
-  --color-primary: #242424;
-  --color-primary-rgb: 36, 36, 36; 
+  /* Fallback inicial */
+  --color-primary: #404C6E;
+  --color-primary-rgb: 64, 76, 110;
+
   --color-secondary: #FFFFFF;
   --color-secondary-rgb: 255, 255, 255;
+
+  --color-tertiary: #000000;
+  --color-tertiary-rgb: 0, 0, 0;
+}
+
+/* 🌑 DARK */
+body[data-theme="dark"] {
+  --color-primary: #242424;
+  --color-primary-rgb: 36, 36, 36;
+
+  --color-secondary: #FFFFFF;
+  --color-secondary-rgb: 255, 255, 255;
+
   --color-tertiary: #39DCED;
   --color-tertiary-rgb: 57, 220, 237;
 }
 
+/* 🌞 LIGHT */
 body[data-theme="light"] {
   --color-primary: #EBEBEB;
   --color-primary-rgb: 235, 235, 235;
+
   --color-secondary: #000000;
   --color-secondary-rgb: 0, 0, 0;
+
   --color-tertiary: #AA30F1;
   --color-tertiary-rgb: 170, 48, 241;
 }

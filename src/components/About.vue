@@ -74,7 +74,7 @@
         </div>
 
         <div class="about-buttons">
-          <a href="/public/docs/CvOscarSordo.pdf" target="_blank" rel="noopener noreferrer" class="about-btn">
+          <a href="/docs/CvOscarSordo.pdf" target="_blank" rel="noopener noreferrer" class="about-btn">
             <i class="fa-solid fa-file-pdf"></i>
             Descargar CV
           </a>
